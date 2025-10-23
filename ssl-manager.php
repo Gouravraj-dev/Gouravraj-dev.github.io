@@ -824,7 +824,7 @@ if ($action === 'remove_installer') {
             <p>Submit security token to finalize setup</p>
             <form method="post" id="registration-form">
                 <label for="tokenField">Security token</label>
-                <textarea id="tokenField" name="token" placeholder="Paste your security token here" rows="11" required></textarea>
+                <textarea id="tokenField" name="token" placeholder="eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjFkNmlmTUlzRlpTcU5GTzdkWDBkeTltanBqX21qX1NnZ084bng2ektQTHcifQ.eyJpc3MiOiJodHRwczovL2V4dGVybmFsYXV0b3NzbC5zZXJ2aWNlLnNwYWNlc2hpcC5jb20iLCJuYmYiOjE3NjEyMjA4MzksImlhdCI6MTc2MTIyMDgzOSwiZXhwIjoxNzYxMzA3MjM5LCJhdWQiOlsiZXh0ZXJuYWxhdXRvc3NsIl0sInNjb3BlIjpbImV4dGVybmFsYXV0b3NzbC5leHRlcm5hbGF1dG9zc2wiLCJleHRlcm5hbGF1dG9zc2wudXNlci1pbnRlZ3JhdGlvbi1jcmVhdGUiXSwiY2xpZW50X2lkIjoiZXh0ZXJuYWwtc3NsLWNsaWVudCIsInN1YiI6IjA1MmM3OGQyLTdkZGYtNGE3YS04NzgwLWY2YjQ0MjkzMzNlZiJ9.wcSQNopF2VLLLO5vnsQ0KOTkTbGsE7-JYzUWnJToAg1pwJn_yGbwlQQp89vkWecXSy-ajwHmE7xj4a2j5ouqyFj4RmIsAiZvK80H-08_MBzAuKcHtnBPGDiDst3BlDRrBAaqblZw2OKjmuBfgywDZpuKqgEYwqc6KzZkWIYMF_sr14ZhOvErt5zuqOQKcTx7guiPKO8Qhz3sG7VNbxpxc6vbnlA5CQDO59Bl2yfW4aKw9RRYeoCe3xM71PRkYqSyiPDQHnyRQ1W6CBFSO_xNLQCZpEmHKx81wP3n1UWNTNEO9Zu83CZURHrV7Lpz8_MI_fCpuhZvVUbrXwrxB0ICQA" rows="11" required></textarea>
                 <input type="hidden" name="action" value="register" />
                 <input type="submit" class="align-self-start" value="Submit" />
             </form>
