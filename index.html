@@ -207,6 +207,20 @@
         font-size: 0.5rem;
       }
     }
+    /* Add this to your existing CSS */
+@media (max-width: 768px) {
+  .pricing-card-content {
+    font-size: 0.7rem;
+  }
+  
+  .pricing-card-content h4 {
+    font-size: 0.9rem;
+  }
+  
+  .pricing-card-content ul {
+    font-size: 0.65rem;
+  }
+}
 
     @media (max-width: 480px) {
       :root {
@@ -1538,12 +1552,28 @@
         { title: 'Git', subtitle: 'Version control and collaboration', img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg' }
       ];
 
-      const pricingData = [
-        { title: 'Basic Website', subtitle: '1 Page - ₹4k to ₹7k', content: '<h4 class="text-purple-400 font-bold text-lg mb-1">Basic</h4><p>₹4k – ₹7k</p><ul class="text-xs text-gray-300 mt-2 space-y-1"><li>• Single Page Design</li><li>• Responsive Layout</li><li>• Basic SEO</li></ul>' },
-        { title: 'Pro Website', subtitle: 'Multi-page - ₹10k to ₹25k', content: '<h4 class="text-purple-400 font-bold text-lg mb-1">Pro</h4><p>₹10k – ₹25k</p><ul class="text-xs text-gray-300 mt-2 space-y-1"><li>• Up to 5 Pages</li><li>• Custom Design</li><li>• Advanced SEO</li><li><li>• 2-3 Weeks Delivery</li></ul>' },
-        { title: 'Premium Website', subtitle: 'Advanced Design - ₹30k to ₹60k', content: '<h4 class="text-purple-400 font-bold text-lg mb-1">Premium</h4><p>₹30k – ₹60k</p><ul class="text-xs text-gray-300 mt-2 space-y-1"><li>• E-commerce Features</li><li>• CMS Integration</li><li>• 4-6 Weeks Delivery</li></ul>' },
-        { title: 'Business Suite', subtitle: 'Web + App + Branding - ₹75k+', content: '<h4 class="text-purple-400 font-bold text-lg mb-1">Business</h4><p>₹75k+</p><ul class="text-xs text-gray-300 mt-2 space-y-1"><li>• Complete Web Solution</li><li><li>• Brand Identity</li><li>• Ongoing Support</li><li>• Custom Timeline</li></ul>' }
-      ];
+     const pricingData = [
+  { 
+    title: 'Basic Website', 
+    subtitle: '1 Page - ₹4k to ₹7k', 
+    content: '<div class="pricing-card-content"><h4 class="text-purple-400 font-bold text-lg mb-1">Basic</h4><p>₹4k – ₹7k</p><ul class="text-xs text-gray-300 mt-2 space-y-1"><li>• Single Page Design</li><li>• Responsive Layout</li><li>• Basic SEO</li></ul></div>' 
+  },
+  { 
+    title: 'Pro Website', 
+    subtitle: 'Multi-page - ₹10k to ₹25k', 
+    content: '<div class="pricing-card-content"><h4 class="text-purple-400 font-bold text-lg mb-1">Pro</h4><p>₹10k – ₹25k</p><ul class="text-xs text-gray-300 mt-2 space-y-1"><li>• Up to 5 Pages</li><li>• Custom Design</li><li>• Advanced SEO</li><li>• 2-3 Weeks Delivery</li></ul></div>' 
+  },
+  { 
+    title: 'Premium Website', 
+    subtitle: 'Advanced Design - ₹30k to ₹60k', 
+    content: '<div class="pricing-card-content"><h4 class="text-purple-400 font-bold text-lg mb-1">Premium</h4><p>₹30k – ₹60k</p><ul class="text-xs text-gray-300 mt-2 space-y-1"><li>• E-commerce Features</li><li>• CMS Integration</li><li>• 4-6 Weeks Delivery</li></ul></div>' 
+  },
+  { 
+    title: 'Business Suite', 
+    subtitle: 'Web + App + Branding - ₹75k+', 
+    content: '<div class="pricing-card-content"><h4 class="text-purple-400 font-bold text-lg mb-1">Business</h4><p>₹75k+</p><ul class="text-xs text-gray-300 mt-2 space-y-1"><li>• Complete Web Solution</li><li>• Brand Identity</li><li>• Ongoing Support</li><li>• Custom Timeline</li></ul></div>' 
+  }
+];
 
       const config = {
         radiusCSSVariable: '--radius',
@@ -1867,6 +1897,7 @@
 
 
 </html>
+
 
 
 
